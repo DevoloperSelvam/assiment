@@ -1,0 +1,60 @@
+let myResume= [
+  { "basics" :{
+     "name": "G selvam",
+    "email": "selvamdon761@gmail,com",
+    "phone": "7871118807",
+    "studing": "12th",
+    "location": {
+      "address": "Gangai amman kovil street,irumbedu,near gastamp company,kanchipuram district,sriperumbuthur thaluka.",
+      "postalCode": "602105",
+      "city": "Chennai",
+      "state": "Tamilnadu",
+      "country": "India"
+    },
+  },
+  
+  "work": {
+      "company": "Sheyon pvt ltd",
+      "position": "store incharge",
+      "startDate": "2020-09-06",
+      "endDate": "2022-07-28",
+      "summary": "more ",
+    },
+  
+  "education": {
+      "institution": "Indian instituten of industry interaction education and research institute",
+      "department": "Automotive service technician",
+      "studyType": "fulltime",
+      "batch year": "2022",
+    },
+  "skills": {"name": "Plumber,Bike racing in track",
+      "level": "beginer",
+    },
+  "languages":{"language": "Tamil,Enlish",
+    },
+  "interests":{"name": "Drawing,",
+    }
+  }
+]  
+ console.log(myResume);
+
+for (let i = 0; i < myResume.length; i++){
+  let resume =myResume[i];
+  console.log(resume.education);
+  console.log(resume.basics);
+  console.log(resume.work);
+  console.log(resume.skills);
+  console.log(resume.languages);
+  console.log(resume.interests);
+}
+for (let entries in myResume) {
+    console.log(myResume[entries]);
+  }
+
+for (const object of myResume) {
+  console.log(object);  
+}
+
+myResume.forEach((element) => {
+  console.log(element);
+});
